@@ -96,11 +96,7 @@ class Login extends Component {
 
                                                 <AvGroup>
                                                     <Label for="password">Password</Label>
-                                                    <Link
-                                                        to="/account/forget-password"
-                                                        className="text-muted float-right">
-                                                        <small>Forgot your password?</small>
-                                                    </Link>
+                                                  
                                                     <AvInput
                                                         type="password"
                                                         name="password"
