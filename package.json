@@ -18,6 +18,7 @@
     "draft-js": "^0.11.5",
     "draftjs-to-html": "^0.9.1",
     "frappe-gantt": "^0.3.0",
+    "gh-pages": "^3.2.3",
     "google-maps-react": "^2.0.6",
     "html-to-draftjs": "^1.5.0",
     "jwt-decode": "^2.2.0",
@@ -59,7 +60,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "format": "prettier --write 'src/**/*.js'"
+    "format": "prettier --write 'src/**/*.js'",
+       "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -74,4 +81,5 @@
     "flow-bin": "^0.125.1",
     "redux-saga-test-plan": "^4.0.0-beta.3"
   }
+
 }
