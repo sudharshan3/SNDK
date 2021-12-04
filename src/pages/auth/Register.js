@@ -75,7 +75,7 @@ class Register extends Component {
                 {this.props.user && this.renderRedirectToConfirm()}
 
                 {(this._isMounted || !isAuthTokenValid) && (
-                    <div className="account-pages mt-5 mb-5">
+                    <div className="account-pages ">
                         <Container>
                             <Row className="justify-content-center">
                                 <Col lg={8}>
@@ -88,12 +88,12 @@ class Register extends Component {
                                             </Link>
                                         </div>
 
-                                        <CardBody className="p-4 position-relative">
+                                        <CardBody className="p-3 position-relative">
                                             {/* preloader */}
                                             {this.props.loading && <LoaderWidget />}
 
                                             <div className="text-center w-75 m-auto">
-                                                <h4 className="text-dark-50 text-center mt-0 font-weight-bold">
+                                                <h4 className="text-dark-50 text-center m-0 font-weight-bold">
                                                     REGISTER
                                                 </h4>
                                             </div>
